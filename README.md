@@ -1,9 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Practice mock interviews with AI agents.
+MOCK_HIRE is a web application designed to simulate real interview scenarios using AI, helping users prepare effectively for job interviews.
 
-## Getting Started
+🚀 Features
+AI-Powered Interviews: Engage in mock interviews with AI agents that simulate real interviewers.
 
-First, run the development server:
+User Authentication: Secure sign-up and login functionalities using Firebase Authentication.
 
+Interview Management: Track and review past interviews.
+
+Responsive Design: Optimized for various devices to ensure a seamless user experience.
+
+🛠️ Tech Stack
+Frontend: Next.js 14, TypeScript, Tailwind CSS
+
+Backend: Firebase Authentication, Firestore
+
+Deployment: Vercel
+
+PROJECT SETUP -->
+
+1.First, Clone the repository:
+
+```bash
+git clone https://github.com/livesh19/MOCK_HIRE.git
+```
+
+2.Install dependencies:
 ```bash
 npm run dev
 # or
@@ -13,6 +35,30 @@ pnpm dev
 # or
 bun dev
 ```
+3.Create .env.local file and add the following'
+```bash
+NEXT_PUBLIC_FIREBASE_API_KEY=key
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=key
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=key
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=key
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=key
+NEXT_PUBLIC_FIREBASE_APP_ID=key
+GOOGLE_GENERATIVE_AI_API_KEY=key
+NEXT_PUBLIC_VAPI_WEB_TOKEN=key
+NEXT_PUBLIC_VAPI_WORKFLOW_ID=key
+
+FIREBASE_PROJECT_ID=key
+FIREBASE_CLIENT_EMAIL=key
+FIREBASE_PRIVATE_KEY=key
+```
+
+4.Run the development server:
+```bash
+npm run dev
+# or
+yarn dev
+```
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
